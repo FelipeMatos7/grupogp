@@ -1,0 +1,133 @@
+body{
+    background-image: url(images/bg_desktop.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.full-height{
+    min-height: 100vh;
+    background-color: rgba(92,92,92,0.8);
+}
+.setai-square{
+    width: 350px;
+    height: 350px;
+    margin-right: 1rem;
+    position: relative;
+    background-image: url(images/gp_setai_bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 0px;
+}
+.setai-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.gpzs-img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.gpzs-square{
+    width: 350px;
+    height: 350px;
+    margin-left: 1rem;
+    padding-left: 0px;
+    position: relative;
+    background-image: url(images/gp_zonasul_bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.overlay-setai{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    background-color: RGBA(48,48,48,0.7);
+    width: 100%;
+    transition: .6 ease;
+    transition-duration: 0.7s;
+}
+.setai-square:hover .overlay-setai{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    background-color: RGBA(48,48,48,0.8);
+    width: 100%;
+}
+.overlay-gp{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    background-color: RGBA(97,76,67,0.6);
+    width: 100%;
+    transition: .6 ease;
+    transition-duration: 0.7s;
+}
+.gpzs-square:hover .overlay-gp{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    background-color: RGBA(97,76,67,0.8);
+    width: 100%;
+}
+.logo-setai{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    transition: .6 ease;
+    transition-duration: 0.7s;
+}
+.setai-square:hover .logo-setai{
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 20%;
+    margin-bottom: 40%;
+}
+.gpzs-square:hover .logo-setai{
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    margin-left: 20%;
+    margin-bottom: 40%;
+}
+@media only screen and (max-width: 600px){
+
+    .full-height{
+        height: 100%;
+    }
+    .setai-square{
+        margin-right: 0;
+        margin-left: 20%;
+        width: 250px;
+        height: 250px;
+    }
+    .gpzs-square{
+        margin-right: 0;
+        margin-left: 20%;
+        width: 250px;
+        height: 250px;
+    }
+    .overlay-gp{
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        background-color: RGBA(97,76,67,0.6);
+        width: 100%;
+        transition: .6 ease;
+        transition-duration: 0.7s;
+    }
+    
+    .overlay-setai{
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        background-color: RGBA(48,48,48,0.7);
+        width: 100%;
+        transition: .6 ease;
+        transition-duration: 0.7s;
+    }
+}
